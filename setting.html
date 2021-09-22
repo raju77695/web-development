@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <?php
+	$con=mysqli_connect("localhost","root","","Lifestyle Store");
+	?>ss
+    <link rel="stylesheet"  href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.php">Lifestyle Store</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="cart.html"><span class="glyphicon glyphicon-user"></span> Cart</a></li>
+                        <li><a href="settings.html"><span class="glyphicon glyphicon-Setting"></span> Setting</a></li>
+						<li><a href="Logout.html"><span class="glyphicon glyphicon-Log-out"></span>Logout</a></li>
+                    </ul>
+        </div>
+      </div>
+    </nav>
+	
+	<br></br>
+		<div class="panel panel primary">
+ <div class="container">
+ <div class="panel-heading">
+    <h2>Setting</h2>
+      <form action="/setting.php">
+       <div class="form-group">
+        
+          <input type="Password" class="form-control" id="Password" placeholder="Old Password" name="Password">
+          <input type="Password" class="form-control" id="Password" placeholder="New Password" name="Password">
+		  <input type="Password" class="form-control" id="Password" placeholder="Re-type Password" name="Password">
+		    
+		   </div>  
+    <button type="Change" class="btn btn-primary">Login</button>
+	<br></br>
+	 <li><a  href="">Change password</a></li>
+  </form>
+</div>
